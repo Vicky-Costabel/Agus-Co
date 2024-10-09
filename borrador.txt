@@ -1,0 +1,315 @@
+// main{ 
+//     display: flexbox;
+//     height: auto;
+//     overflow: hidden;
+//     .container-logo{
+//         display: flex;
+//         height: 90vh;
+//         .img-container {
+//             width: 50vw;
+//             bottom: 4vh;
+//             position: relative;
+//             .imagen {
+//                 z-index: 2;
+//                 width: 50vw;
+//                 max-width:100%;
+//                 position: relative;
+//                 object-fit: cover;
+//                 opacity: 0;
+//                 animation-duration: 3s; //Animacion 
+//                 animation-iteration-count: infinite;
+//             }
+//             .animacion1 {
+//                 position: absolute;
+//                 top: 10%;
+//                 left: 3%;
+//                 animation-name: showImage1;
+//             }
+//             .animacion2 {
+//                 position: absolute;
+//                 right: 3%;
+//                 animation-name: showImage2;
+
+//             }
+//         }
+//         .portada{
+//             width: 60vw;
+//             height: 100%;
+//             .logo{
+//                 position: relative;
+//                 right: 6%;
+//                 .portada-logo{
+//                     max-width: 100%;
+//                 }
+//             }
+//             .tit-container{
+//                 height: 11vh;
+//                 max-height: 15vh;
+//                 width: 100%;
+//                 position: relative;
+//                 bottom: 30vh;
+//                 left: 13%;
+//                 padding: 0% 0% 1% 5%;
+//                 border-bottom: 5px solid white;
+//                 color: white;
+//                 .tit-logo{
+//                     font-size: 2.5rem;
+//                     font-weight: 500;
+//                 }
+//                 .tit-des-logo{
+//                     margin-bottom:31%;
+//                     font-size: 0.9em;
+//                     font-weight: 800;
+//                 }
+//             }
+//             .foun-container{
+//                 display: flex;
+//                 justify-content: center;
+//                 bottom: 25%;
+//                 width: 100%;
+//                 position: relative;
+//                 .fon-con{
+//                     background-color: black;
+//                     width: 25vw;
+//                     display: flex;
+//                     justify-content: space-evenly;
+//                     padding: 1%;
+//                     border-radius: 30px;
+//                     color: white;
+//                     p{
+//                         font-weight: 900;
+//                     }
+//                     a{
+//                         color: white;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//     .soft-container{
+//         height: 50vh;
+//         max-height: 60vh;
+//         bottom: 15vh;
+//         width: 100%;
+//         position: relative;
+//         display: flex;
+//         z-index: 1;
+//         flex-direction: row;
+//         align-content: center;
+//         .soft-con{
+//             background-image: url(../media/ripped-notebook-paper-white-transparent-image-7.png);
+//             background-position: center;
+//             background-size: 110% 93%;
+//             height: 100%;
+//             width: 100%;
+//             display: flex;
+//             flex-direction: row;
+//             align-items: center;
+//             .soft-des{
+//                 width: 50vw;
+//                 div{
+//                     flex-direction: column;
+//                     display: flex;
+//                     align-items: end;
+//                     .soft-txt{
+//                         position: relative;
+//                         right: 0vw;
+//                         border-bottom: 4px solid black;
+//                         width: 100%;
+//                         .soft{
+//                             text-align: end;
+//                             font-size: 6rem;
+//                             width: 100%;
+//                         }
+//                     }
+//                     .txt-2{
+//                         .soft-txt-2-con{
+//                             .soft-txt-2{
+//                                 position: relative;
+//                                 bottom: 3vh;
+//                                 font-style: italic;
+//                                 font-size: 2.5rem;
+//                                 background-color: white;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//             .img-con-soft{
+//                 width: 50vw;
+//                 position: relative;
+//                 top: 0%;
+//                 left: 7%;
+//                 .img-soft{
+//                     display: block;
+//                     width: 30vw;
+//                     max-width: 100%;
+//                 }
+//             }
+//         }
+//     }
+//     .desc-container{
+//         background-image: url(../media/FONDO\ BLANCO_Mesa\ de\ trabajo\ 1\ copia.png);
+//         background-size: 110% 100%;
+//         width: 100%;
+//         height: 95vh;
+//         max-height: 100vh;
+//         overflow: hidden;
+//         position: relative;
+//         display: inline-flex;
+//         bottom: 25vh;
+//         .desc-con-txt{
+//             width: 100%;
+//             margin-left: 9%;
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+//             height: 100%;
+//             .desc-li-txt{
+//                 justify-content: space-evenly;
+//                 width: 55vw;
+//                 height: 30%;
+//                 display: flex;
+//                 align-items: center;
+//                 transform: translateX(-150%);
+//                 transition: transform 1s ease-in-out;
+//                 .desc-txt-img{
+//                     display: block;
+//                     width: 15%;
+//                     max-width: 100%;
+//                 }
+//                 div{
+//                     padding-left: 3%;
+//                     h3{
+//                         font-size: 1.8rem;
+//                     }
+//                     .desc-txt{
+//                         font-size: 1.5rem;
+//                         font-weight: 600;
+//                     }
+//                 }
+//             }
+//             .scroll-activo{
+//                 transform: translateX(0); 
+//             }
+//         }
+//         .go{
+//             margin-top:0%;
+//             display: inline-flex;
+//             transform: translateX(-150%);
+//             transition: transform 1s ease-in-out;
+//             width: 40vw;
+//             justify-content: end;
+//             right: 20vw;
+//             position: relative;
+//             background-color: black;
+//             border-top-right-radius: 30px;
+//             border-bottom-right-radius: 30px;
+//             .to-porfolio{
+//                 font-size: 2rem;
+//                 padding: 1% 4% 1% 0%;
+//                 color: white;
+//                 text-decoration: none;
+//             }
+//             &:hover{
+//                 transform: translateX(10%);
+//                 transition: transform 0.6s ease;
+//             }
+//         }
+//         .scroll-activo{
+//             transform: translateX(0); 
+//         }
+//         .desc-imgs{
+//             position: absolute;
+//             top: 0%;
+//             right: 0%;;
+//             width: 50vw;
+//             .desc-img{
+//                 position: relative;
+//                 right: 10%;
+//                 bottom: 0%;
+//                 z-index: 1;
+//                 width: 60vw;
+//             }
+//             .sticker{
+//                 position: absolute;
+//                 z-index: 2;
+//                 opacity: 0; 
+//                 animation-duration: 3s;
+//                 animation-iteration-count: infinite;
+//             }
+//             .desc-stiker-1 {
+//                 width: 8vw;
+//             }
+//             .desc-stiker-2{
+//                 width: 9vw; 
+//             }
+//             .desc-img-1{
+//                 transform: rotate(0deg);
+//                 top: 5%;
+//                 right: 20%;
+//             }
+//             .desc-img-2{
+//                 transform: rotate(-10deg);
+//                 top: 40%;
+//                 left: 20%;      
+//             }
+//             .desc-img-3{
+//                 transform: rotate(10deg);
+//                 top: 45%;
+//                 right: 20%;    
+//             }
+//             .desc-img-4{
+//                 transform: rotate(10deg);
+//                 left: 10%;
+//                 bottom: 30%;                
+//             }
+//         } 
+//     }
+
+//     // portada
+
+//     @keyframes showImage1 {
+//         0%, 49.98% { opacity: 1; }  
+//         49.99%, 100% { opacity: 0; } 
+//     }
+//     @keyframes showImage2 {
+//         0%, 50.00% { opacity: 0; }  
+//         51.01%, 100% { opacity: 1; } 
+//     }
+
+//     // sticker
+
+//     .sticker:nth-child(1) {
+//         animation-name: sticker1;
+//     }
+//     .sticker:nth-child(2) {
+//         animation-name: sticker2;
+//     }
+//     .sticker:nth-child(3) {
+//         animation-name: sticker3;
+//     }
+//     .sticker:nth-child(4) {
+//         animation-name: sticker4;
+//     }
+
+//     @keyframes sticker1 {
+//         0%, 87.49% {opacity: 1;}
+//         87.5%, 100% {opacity: 0;}
+//     }
+//     @keyframes sticker2 {
+//         0%, 12.49% { opacity: 0; } 
+//         12.5%, 75% {opacity:1;}
+//         75.01%, 100% {opacity: 0;}
+//     }
+//     @keyframes sticker3 {
+//         0%, 25% { opacity: 0; } 
+//         25.01%, 62.49% {opacity: 1;}
+//         62.5%, 100% {opacity: 0;}
+//     }
+//     @keyframes sticker4 {
+//         0%, 37.49% { opacity: 0; } 
+//         37.5%, 50% {opacity: 1;}
+//         50.01%, 100% {opacity: 0;}
+//     }
+// } 
